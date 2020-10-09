@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Add a Configuration Screen in App Builder | Entando Developers</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    <link rel="icon" href="/theme/favicon.png">
+    <script src="/theme/javascript/hotjar.js"></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=UA-17222082-5"></script>
+    <script src="/theme/javascript/ga.js"></script>
+    <meta name="description" content="Entando Developers">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" href="/assets/css/0.styles.bf64360c.css" as="style"><link rel="preload" href="/assets/js/app.2e9d114f.js" as="script"><link rel="preload" href="/assets/js/2.b89c1d7d.js" as="script"><link rel="preload" href="/assets/js/36.8fb4b5e2.js" as="script"><link rel="prefetch" href="/assets/js/10.83bc7759.js"><link rel="prefetch" href="/assets/js/100.f6578c6b.js"><link rel="prefetch" href="/assets/js/101.90679d6b.js"><link rel="prefetch" href="/assets/js/102.0218b3c8.js"><link rel="prefetch" href="/assets/js/103.395710a7.js"><link rel="prefetch" href="/assets/js/104.adfc8761.js"><link rel="prefetch" href="/assets/js/105.58457410.js"><link rel="prefetch" href="/assets/js/106.151fafa9.js"><link rel="prefetch" href="/assets/js/107.6ba0c98b.js"><link rel="prefetch" href="/assets/js/108.7f678489.js"><link rel="prefetch" href="/assets/js/109.2f09af21.js"><link rel="prefetch" href="/assets/js/11.55ec5e80.js"><link rel="prefetch" href="/assets/js/110.84e47284.js"><link rel="prefetch" href="/assets/js/111.6a7b4d95.js"><link rel="prefetch" href="/assets/js/112.8a485842.js"><link rel="prefetch" href="/assets/js/113.33637db7.js"><link rel="prefetch" href="/assets/js/114.24e108b4.js"><link rel="prefetch" href="/assets/js/115.3bfaac30.js"><link rel="prefetch" href="/assets/js/116.b65852a2.js"><link rel="prefetch" href="/assets/js/117.0b94692d.js"><link rel="prefetch" href="/assets/js/118.5aa5ff21.js"><link rel="prefetch" href="/assets/js/119.94954223.js"><link rel="prefetch" href="/assets/js/12.524ab722.js"><link rel="prefetch" href="/assets/js/120.65d24f96.js"><link rel="prefetch" href="/assets/js/121.729a90ed.js"><link rel="prefetch" href="/assets/js/122.ceb2ac62.js"><link rel="prefetch" href="/assets/js/123.4dcbcaaa.js"><link rel="prefetch" href="/assets/js/124.7b0d1541.js"><link rel="prefetch" href="/assets/js/125.1ef71c06.js"><link rel="prefetch" href="/assets/js/126.faf9dddb.js"><link rel="prefetch" href="/assets/js/127.f1fa598c.js"><link rel="prefetch" href="/assets/js/128.5b577593.js"><link rel="prefetch" href="/assets/js/129.de1d8203.js"><link rel="prefetch" href="/assets/js/13.d00a740f.js"><link rel="prefetch" href="/assets/js/130.852c8f28.js"><link rel="prefetch" href="/assets/js/131.f33a2493.js"><link rel="prefetch" href="/assets/js/132.f7541123.js"><link rel="prefetch" href="/assets/js/133.cf0fcfe6.js"><link rel="prefetch" href="/assets/js/134.9ecfa99c.js"><link rel="prefetch" href="/assets/js/135.a9804828.js"><link rel="prefetch" href="/assets/js/136.1622afa8.js"><link rel="prefetch" href="/assets/js/137.385fee16.js"><link rel="prefetch" href="/assets/js/138.3fbdf58e.js"><link rel="prefetch" href="/assets/js/139.4b551242.js"><link rel="prefetch" href="/assets/js/14.25ad284e.js"><link rel="prefetch" href="/assets/js/140.4cd850ae.js"><link rel="prefetch" href="/assets/js/141.92b67331.js"><link rel="prefetch" href="/assets/js/142.11955140.js"><link rel="prefetch" href="/assets/js/143.82ae3226.js"><link rel="prefetch" href="/assets/js/144.0c1c7cee.js"><link rel="prefetch" href="/assets/js/145.796d46c9.js"><link rel="prefetch" href="/assets/js/146.2545a452.js"><link rel="prefetch" href="/assets/js/147.e7f476dc.js"><link rel="prefetch" href="/assets/js/148.2f65a4da.js"><link rel="prefetch" href="/assets/js/149.cd2c15a6.js"><link rel="prefetch" href="/assets/js/15.814661b5.js"><link rel="prefetch" href="/assets/js/150.2c4df595.js"><link rel="prefetch" href="/assets/js/151.6b9e4f8f.js"><link rel="prefetch" href="/assets/js/152.d39c55e9.js"><link rel="prefetch" href="/assets/js/153.51259d79.js"><link rel="prefetch" href="/assets/js/154.8b4fdd78.js"><link rel="prefetch" href="/assets/js/155.36a1a8d4.js"><link rel="prefetch" href="/assets/js/156.83ac3511.js"><link rel="prefetch" href="/assets/js/157.b941b611.js"><link rel="prefetch" href="/assets/js/158.22d326a2.js"><link rel="prefetch" href="/assets/js/159.30277873.js"><link rel="prefetch" href="/assets/js/16.e644af3a.js"><link rel="prefetch" href="/assets/js/160.f94ac753.js"><link rel="prefetch" href="/assets/js/161.74bc2212.js"><link rel="prefetch" href="/assets/js/162.980066aa.js"><link rel="prefetch" href="/assets/js/163.20b460b0.js"><link rel="prefetch" href="/assets/js/164.02de3a75.js"><link rel="prefetch" href="/assets/js/165.6a940cfa.js"><link rel="prefetch" href="/assets/js/166.57c47e6e.js"><link rel="prefetch" href="/assets/js/167.730b7bc1.js"><link rel="prefetch" href="/assets/js/168.dec8ce1c.js"><link rel="prefetch" href="/assets/js/169.ac8dc990.js"><link rel="prefetch" href="/assets/js/17.802c990d.js"><link rel="prefetch" href="/assets/js/170.0a385858.js"><link rel="prefetch" href="/assets/js/171.83eaae13.js"><link rel="prefetch" href="/assets/js/172.62f69607.js"><link rel="prefetch" href="/assets/js/173.64b594f1.js"><link rel="prefetch" href="/assets/js/174.9fc751f9.js"><link rel="prefetch" href="/assets/js/175.71b6c57d.js"><link rel="prefetch" href="/assets/js/176.738b37e7.js"><link rel="prefetch" href="/assets/js/177.d8fe1b3b.js"><link rel="prefetch" href="/assets/js/178.e98e3119.js"><link rel="prefetch" href="/assets/js/179.142c8fa6.js"><link rel="prefetch" href="/assets/js/18.2838d57f.js"><link rel="prefetch" href="/assets/js/180.d68c18fd.js"><link rel="prefetch" href="/assets/js/181.39d6d85f.js"><link rel="prefetch" href="/assets/js/182.a05e370a.js"><link rel="prefetch" href="/assets/js/183.e2c8ee8f.js"><link rel="prefetch" href="/assets/js/184.2803b1ce.js"><link rel="prefetch" href="/assets/js/185.3884e781.js"><link rel="prefetch" href="/assets/js/186.1b137671.js"><link rel="prefetch" href="/assets/js/187.5a875d1d.js"><link rel="prefetch" href="/assets/js/188.a0595c4f.js"><link rel="prefetch" href="/assets/js/189.d69fbac8.js"><link rel="prefetch" href="/assets/js/19.49f07c29.js"><link rel="prefetch" href="/assets/js/190.f79323c3.js"><link rel="prefetch" href="/assets/js/191.f39c1e2d.js"><link rel="prefetch" href="/assets/js/192.a945003b.js"><link rel="prefetch" href="/assets/js/193.e1275784.js"><link rel="prefetch" href="/assets/js/194.7d74eb2d.js"><link rel="prefetch" href="/assets/js/195.cc6ff1b3.js"><link rel="prefetch" href="/assets/js/196.a4ffe061.js"><link rel="prefetch" href="/assets/js/197.0b7f57eb.js"><link rel="prefetch" href="/assets/js/198.11255c73.js"><link rel="prefetch" href="/assets/js/199.f1b0390b.js"><link rel="prefetch" href="/assets/js/20.f3c925f0.js"><link rel="prefetch" href="/assets/js/200.ea124f17.js"><link rel="prefetch" href="/assets/js/201.9290bea4.js"><link rel="prefetch" href="/assets/js/202.09ca76f5.js"><link rel="prefetch" href="/assets/js/203.e5136eb8.js"><link rel="prefetch" href="/assets/js/204.7c0884f6.js"><link rel="prefetch" href="/assets/js/205.18138591.js"><link rel="prefetch" href="/assets/js/206.1d021a62.js"><link rel="prefetch" href="/assets/js/207.451f2ace.js"><link rel="prefetch" href="/assets/js/208.ec9ee32a.js"><link rel="prefetch" href="/assets/js/209.22f56608.js"><link rel="prefetch" href="/assets/js/21.7ea86ddf.js"><link rel="prefetch" href="/assets/js/210.a8b17abf.js"><link rel="prefetch" href="/assets/js/211.411fd99d.js"><link rel="prefetch" href="/assets/js/212.782b7260.js"><link rel="prefetch" href="/assets/js/213.95718481.js"><link rel="prefetch" href="/assets/js/214.1762514a.js"><link rel="prefetch" href="/assets/js/215.431c0b81.js"><link rel="prefetch" href="/assets/js/216.09cb1416.js"><link rel="prefetch" href="/assets/js/217.11fa66e2.js"><link rel="prefetch" href="/assets/js/218.aeeecdfd.js"><link rel="prefetch" href="/assets/js/219.38fa0258.js"><link rel="prefetch" href="/assets/js/22.5b16a677.js"><link rel="prefetch" href="/assets/js/220.115b92bd.js"><link rel="prefetch" href="/assets/js/221.e000476a.js"><link rel="prefetch" href="/assets/js/222.0cd3632c.js"><link rel="prefetch" href="/assets/js/223.dbdf0daa.js"><link rel="prefetch" href="/assets/js/224.52acfee9.js"><link rel="prefetch" href="/assets/js/225.5924d118.js"><link rel="prefetch" href="/assets/js/226.8884ffca.js"><link rel="prefetch" href="/assets/js/227.b40b788b.js"><link rel="prefetch" href="/assets/js/228.491a194e.js"><link rel="prefetch" href="/assets/js/229.a58f158a.js"><link rel="prefetch" href="/assets/js/23.2a839992.js"><link rel="prefetch" href="/assets/js/24.a8da83b4.js"><link rel="prefetch" href="/assets/js/25.380e9de0.js"><link rel="prefetch" href="/assets/js/26.a23fa6dc.js"><link rel="prefetch" href="/assets/js/27.4481fd7c.js"><link rel="prefetch" href="/assets/js/28.cb201447.js"><link rel="prefetch" href="/assets/js/29.7cc08dde.js"><link rel="prefetch" href="/assets/js/3.8631809c.js"><link rel="prefetch" href="/assets/js/30.940dde91.js"><link rel="prefetch" href="/assets/js/31.16e0639c.js"><link rel="prefetch" href="/assets/js/32.2b472167.js"><link rel="prefetch" href="/assets/js/33.763a17cf.js"><link rel="prefetch" href="/assets/js/34.ae45fa59.js"><link rel="prefetch" href="/assets/js/35.1faa2c41.js"><link rel="prefetch" href="/assets/js/37.8a704ad1.js"><link rel="prefetch" href="/assets/js/38.18870535.js"><link rel="prefetch" href="/assets/js/39.2b8e7b66.js"><link rel="prefetch" href="/assets/js/4.13823914.js"><link rel="prefetch" href="/assets/js/40.5dfb16be.js"><link rel="prefetch" href="/assets/js/41.e732727a.js"><link rel="prefetch" href="/assets/js/42.5218edc5.js"><link rel="prefetch" href="/assets/js/43.90f40333.js"><link rel="prefetch" href="/assets/js/44.12bc342c.js"><link rel="prefetch" href="/assets/js/45.b2c6666d.js"><link rel="prefetch" href="/assets/js/46.69d42cc8.js"><link rel="prefetch" href="/assets/js/47.2d8f4c91.js"><link rel="prefetch" href="/assets/js/48.1bae1e09.js"><link rel="prefetch" href="/assets/js/49.24a4a30d.js"><link rel="prefetch" href="/assets/js/5.10012b92.js"><link rel="prefetch" href="/assets/js/50.49a7036e.js"><link rel="prefetch" href="/assets/js/51.a917bf98.js"><link rel="prefetch" href="/assets/js/52.2d717da1.js"><link rel="prefetch" href="/assets/js/53.46bafc87.js"><link rel="prefetch" href="/assets/js/54.b8d736c7.js"><link rel="prefetch" href="/assets/js/55.967a8827.js"><link rel="prefetch" href="/assets/js/56.0bc018fc.js"><link rel="prefetch" href="/assets/js/57.765ec0b5.js"><link rel="prefetch" href="/assets/js/58.d24569cb.js"><link rel="prefetch" href="/assets/js/59.1c69c5e3.js"><link rel="prefetch" href="/assets/js/6.69a19f17.js"><link rel="prefetch" href="/assets/js/60.d8330c74.js"><link rel="prefetch" href="/assets/js/61.695d1933.js"><link rel="prefetch" href="/assets/js/62.ed2dede6.js"><link rel="prefetch" href="/assets/js/63.0c57fc3b.js"><link rel="prefetch" href="/assets/js/64.43b98bf4.js"><link rel="prefetch" href="/assets/js/65.efe8d220.js"><link rel="prefetch" href="/assets/js/66.69bf9e8f.js"><link rel="prefetch" href="/assets/js/67.8738fb1f.js"><link rel="prefetch" href="/assets/js/68.ac05a594.js"><link rel="prefetch" href="/assets/js/69.66ea7ad1.js"><link rel="prefetch" href="/assets/js/7.675e936b.js"><link rel="prefetch" href="/assets/js/70.d4b59030.js"><link rel="prefetch" href="/assets/js/71.db3338c4.js"><link rel="prefetch" href="/assets/js/72.ec49c315.js"><link rel="prefetch" href="/assets/js/73.bbe9343b.js"><link rel="prefetch" href="/assets/js/74.1c31abbf.js"><link rel="prefetch" href="/assets/js/75.72489c8b.js"><link rel="prefetch" href="/assets/js/76.c7ca0b76.js"><link rel="prefetch" href="/assets/js/77.b5588800.js"><link rel="prefetch" href="/assets/js/78.43e7b472.js"><link rel="prefetch" href="/assets/js/79.b47759f4.js"><link rel="prefetch" href="/assets/js/8.0a2238b6.js"><link rel="prefetch" href="/assets/js/80.b50b4158.js"><link rel="prefetch" href="/assets/js/81.f55d5ec1.js"><link rel="prefetch" href="/assets/js/82.527b45f0.js"><link rel="prefetch" href="/assets/js/83.c5bb9e81.js"><link rel="prefetch" href="/assets/js/84.95d006a1.js"><link rel="prefetch" href="/assets/js/85.0517e214.js"><link rel="prefetch" href="/assets/js/86.c573b12e.js"><link rel="prefetch" href="/assets/js/87.b6a10ee9.js"><link rel="prefetch" href="/assets/js/88.72e25a1a.js"><link rel="prefetch" href="/assets/js/89.7ffbba2d.js"><link rel="prefetch" href="/assets/js/9.d785f2a5.js"><link rel="prefetch" href="/assets/js/90.591d66b4.js"><link rel="prefetch" href="/assets/js/91.d459e163.js"><link rel="prefetch" href="/assets/js/92.71285ea9.js"><link rel="prefetch" href="/assets/js/93.7919c11e.js"><link rel="prefetch" href="/assets/js/94.0e74c681.js"><link rel="prefetch" href="/assets/js/95.e57a4b12.js"><link rel="prefetch" href="/assets/js/96.7de4e7ed.js"><link rel="prefetch" href="/assets/js/97.181b4d23.js"><link rel="prefetch" href="/assets/js/98.dd65118d.js"><link rel="prefetch" href="/assets/js/99.a5f00322.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.bf64360c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/theme/logo.svg" alt="Entando Developers" class="logo"> <span class="site-name can-hide">Entando Developers</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Versions" class="dropdown-title"><span class="title">Versions</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/next/docs/" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/v6.2/docs/" class="nav-link">
+  6.2
+</a></li><li class="dropdown-item"><!----> <a href="/v6.1/docs/" class="nav-link">
+  6.1
+</a></li><li class="dropdown-item"><!----> <a href="/old-version/old-version.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  5.3
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="javascript:Entando.versionedLink(&quot;/docs&quot;);" target="_self" rel="" class="nav-link external">
+  Docs
+  <!----></a></div><div class="nav-item"><a href="javascript:Entando.versionedLink(&quot;/tutorials&quot;);" target="_self" rel="" class="nav-link external">
+  Tutorials
+  <!----></a></div><div class="nav-item"><a href="https://forum.entando.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Forum
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.entando.com/page/en/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.entando.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Entando.com
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/entando/entando-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Versions" class="dropdown-title"><span class="title">Versions</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/next/docs/" class="nav-link">
+  Next
+</a></li><li class="dropdown-item"><!----> <a href="/v6.2/docs/" class="nav-link">
+  6.2
+</a></li><li class="dropdown-item"><!----> <a href="/v6.1/docs/" class="nav-link">
+  6.1
+</a></li><li class="dropdown-item"><!----> <a href="/old-version/old-version.html" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  5.3
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div><div class="nav-item"><a href="javascript:Entando.versionedLink(&quot;/docs&quot;);" target="_self" rel="" class="nav-link external">
+  Docs
+  <!----></a></div><div class="nav-item"><a href="javascript:Entando.versionedLink(&quot;/tutorials&quot;);" target="_self" rel="" class="nav-link external">
+  Tutorials
+  <!----></a></div><div class="nav-item"><a href="https://forum.entando.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Forum
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.entando.com/page/en/blog" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Blog
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div><div class="nav-item"><a href="https://www.entando.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Entando.com
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <a href="https://github.com/entando/entando-docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/v6.1/tutorials/micro-frontends" class="sidebar-heading clickable router-link-active open"><span>Micro Frontends</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/v6.1/tutorials/micro-frontends/react.html" class="sidebar-link">React</a></li><li><a href="/v6.1/tutorials/micro-frontends/angular.html" class="sidebar-link">Angular</a></li><li><a href="/v6.1/tutorials/micro-frontends/communication.html" class="sidebar-link">Communication</a></li><li><a href="/v6.1/tutorials/micro-frontends/widget-configuration/" class="active sidebar-link">Config</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/v6.1/tutorials/micro-frontends/widget-configuration/#create-react-app" class="sidebar-link">Create React App</a></li><li class="sidebar-sub-header"><a href="/v6.1/tutorials/micro-frontends/widget-configuration/#add-input-field" class="sidebar-link">Add Input Field</a></li><li class="sidebar-sub-header"><a href="/v6.1/tutorials/micro-frontends/widget-configuration/#custom-element" class="sidebar-link">Custom Element</a></li><li class="sidebar-sub-header"><a href="/v6.1/tutorials/micro-frontends/widget-configuration/#configuration-screen" class="sidebar-link">Configuration Screen</a></li><li class="sidebar-sub-header"><a href="/v6.1/tutorials/micro-frontends/widget-configuration/#add-attribute" class="sidebar-link">Add Attribute</a></li><li class="sidebar-sub-header"><a href="/v6.1/tutorials/micro-frontends/widget-configuration/#display-input" class="sidebar-link">Display Input</a></li><li class="sidebar-sub-header"><a href="/v6.1/tutorials/micro-frontends/widget-configuration/#build-it" class="sidebar-link">Build It</a></li><li class="sidebar-sub-header"><a href="/v6.1/tutorials/micro-frontends/widget-configuration/#update-widget-in-app-builder" class="sidebar-link">Update Widget in App Builder</a></li></ul></li><li><a href="/v6.1/tutorials/micro-frontends/generate-micro-frontends-from-a-database-entity/" class="sidebar-link">Blueprint</a></li><li><a href="/v6.1/tutorials/micro-frontends/authentication/" class="sidebar-link">Authentication</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Microservice Applications</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Content Management</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Component Repository</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Extend the Platform</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Configuration and Operations</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="add-a-configuration-screen-in-app-builder"><a href="#add-a-configuration-screen-in-app-builder" class="header-anchor">#</a> Add a Configuration Screen in App Builder</h1> <p>Entando 6 widgets can be customized through an App Builder configuration
+screen so the citizen developers can avoid writing ad-hoc additional
+code.</p> <p>In Entando 6, the configuration screen is also a micro frontend, which
+can also be defined as a web component. That means you can develop and
+test it in isolation, without a running Entando instance.</p> <h2 id="create-react-app"><a href="#create-react-app" class="header-anchor">#</a> Create React App</h2> <p>Let’s start with the boilerplate provided by <a href="https://create-react-app.dev/" target="_blank" rel="noopener noreferrer">Create React
+App<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>, probably the most popular one.</p> <p><code>npx create-react-app my-widget-config --use-npm</code></p> <div class="language- extra-class"><pre><code>my-widget-config
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    ├── serviceWorker.js
+    └── setupTests.js
+</code></pre></div><p>Then, type <code>cd my-widget-config</code> and <code>npm start</code> to start the app.</p> <h2 id="add-input-field"><a href="#add-input-field" class="header-anchor">#</a> Add Input Field</h2> <p>Let’s start with a simple form: only an input with a label. So, let’s
+edit <code>App.js</code></p> <div class="language- extra-class"><pre><code>import React from 'react';
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { name: ''};
+  }
+
+  handleNameChange(value) {
+    this.setState(prevState =&gt; ({
+      ...prevState,
+      name: value,
+    }));
+  }
+
+  render() {
+    const { name } = this.state;
+    return (
+      &lt;div&gt;
+        &lt;h1&gt;Sample Entando 6 Widget Configuration&lt;/h1&gt;
+        &lt;label htmlFor=&quot;name&quot;&gt;Name&lt;/label&gt;
+        &lt;input id=&quot;name&quot; onChange={e =&gt; this.handleNameChange(e.target.value)} value={name} /&gt;
+      &lt;/div&gt;
+    );
+  }
+}
+
+export default App;
+</code></pre></div><p>You are free to use your favorite form handling library e.g.,
+<a href="https://jaredpalmer.com/formik" target="_blank" rel="noopener noreferrer">Formik<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>,
+<a href="https://redux-form.com/" target="_blank" rel="noopener noreferrer">redux-form<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> (that requirese redux) or others.</p> <p>In regards to styling, since this is going to be an App Builder screen,
+we strongly suggest using <a href="https://www.patternfly.org/v3/" target="_blank" rel="noopener noreferrer">PatternFly
+v3<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> (<code>patternfly</code> and <code>patternfly-react</code>
+packages) to keep UX coherence.</p> <h2 id="custom-element"><a href="#custom-element" class="header-anchor">#</a> Custom Element</h2> <p>Now, let’s add the web component that will wrap the entire React app.
+Let’s name it <code>WidgetElement</code></p> <div class="language- extra-class"><pre><code>import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+class WidgetElement extends HTMLElement {
+  constructor() {
+    super();
+    this.reactRootRef = React.createRef();
+    this.mountPoint = null;
+  }
+
+  get config() {
+    return this.reactRootRef.current ? this.reactRootRef.current.state : {};
+  }
+
+  set config(value) {
+    return this.reactRootRef.current.setState(value);
+  }
+
+  connectedCallback() {
+    this.mountPoint = document.createElement('div');
+    this.appendChild(this.mountPoint);
+    ReactDOM.render(&lt;App ref={this.reactRootRef} /&gt;, this.mountPoint);
+  }
+}
+
+customElements.define('my-widget-config', WidgetElement);
+
+export default WidgetElement;
+</code></pre></div><p>Its responsibility is rendering the react app and syncing the react app
+state in a <code>config</code> property, that <em>must</em> be named that way. The key to
+App builder communication is that it works in three steps:</p> <ul><li><p>App Builder reads <code>config</code> property when the widget config screen is
+rendered</p></li> <li><p><code>config</code> property is mutated when a user configures the widget</p></li> <li><p>When a user saves the config, App Builder retrieves it (again, from
+the <code>config</code> property) and persists it through Entando APIs</p></li></ul> <p>This means the widget developer can focus on the configuration screens
+without having to call Entando APIs to read or write configuration.</p> <p>One more JS file to update: <code>index.js</code>. Starting from this</p> <div class="language- extra-class"><pre><code>import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(&lt;App /&gt;, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
+</code></pre></div><p>You only have to import <code>WidgetElement</code> plus the css, if needed.
+Something like</p> <div class="language- extra-class"><pre><code>import './index.css';
+import './WidgetElement';
+</code></pre></div><p>We assume we don’t need a service worker for the widget, so we can
+delete serviceWorker.js.</p> <p>To ensure our web component is working we have to edit
+<code>public/index.html</code>. Remove <code>&lt;div id=&quot;root&quot;&gt;&lt;/div&gt;</code> from the <code>body</code> (we
+programmatically generated the react root in the <code>connectedCallback</code>
+method of <code>WidgetElement</code>) and add our new web component tag
+<code>&lt;my-widget /&gt;</code>.</p> <div class="language- extra-class"><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;%PUBLIC_URL%/favicon.ico&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+    &lt;title&gt;React App&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;my-widget-config /&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><blockquote><p><strong>Note</strong></p> <p>the web component tag name (<code>my-widget-config</code> in this tutorial)
+<em>must</em> match the first parameter of the <code>customElements.define</code>
+method.</p></blockquote> <p>The page should auto reload and…​congrats, you’re running an Entando 6
+widget in isolation.</p> <h2 id="configuration-screen"><a href="#configuration-screen" class="header-anchor">#</a> Configuration Screen</h2> <p>Before integrating the widget config screen, we need some widget info.
+Open App Builder, go to UX Patterns → Widgets and click on the installed
+widget that we’re creating the configuration screen for.</p> <p>You’ll see a screen like:</p> <p><img src="/assets/img/edit-widget-screen.47019c90.png" alt="Edit widget screen"></p> <p>Next, we’ll build our widget before embedding it into the Entando 6
+instance. From the react project root, type</p> <p><code>npm run build</code></p> <p>and a <code>build/static</code> directory will be generated. Copy it into the
+Entando 6 instance under
+<code>src\main\webapp\cmsresources\my-widget-config</code>, then rename</p> <ul><li><p>a file like <code>js/runtime~main.c7dcdf0b.js</code> to <code>js/runtime.js</code>
+(bootstrapping logic)</p></li> <li><p>a file like <code>js/2.230b21ef.chunk.js</code> to <code>js/vendor.js</code> (third-party
+libraries)</p></li> <li><p>a file like <code>js/main.1fd3965a.chunk.js</code> to <code>js/main.js</code> (app)</p></li></ul> <p>Now, edit again the widget and update the <code>configUI</code> field.</p> <div class="language- extra-class"><pre><code>{
+  &quot;customElement&quot;: &quot;my-widget-config&quot;,
+  &quot;resources&quot;: [
+    &quot;my-widget-config/static/js/runtime.js&quot;,
+    &quot;my-widget-config/static/js/vendor.js&quot;,
+    &quot;my-widget-config/static/js/main.js&quot;
+  ]
+}
+</code></pre></div><blockquote><p><strong>Note</strong></p> <ul><li><p>It is possible to keep the original names in order to avoid
+potential caching issues, but then you will have to update the
+<em>Config UI</em> field in the App Builder widget screen each time a new
+version of the widget is deployed.</p></li> <li><p><code>configUI</code> is a JSON object, so pay attention to save a
+well-formed one (the integrated JSON editor will help you)</p></li> <li><p>value for <code>customElement</code> must match the name of custom tag in
+<code>index.html</code> and the one passed as parameter to
+<code>customElements.define</code> in <code>WidgetElement</code></p></li></ul></blockquote> <p>Last step: configure a page in App Builder, drag our widget into the
+page model slot and you’ll see the configuration screen we just built.</p> <h1 id="display-widget-configuration"><a href="#display-widget-configuration" class="header-anchor">#</a> Display Widget Configuration</h1> <p>So, we already created a react micro frontend widget and configuration
+screen to customize a <em>name</em> field.</p> <p>In this tutorial we will display that field in our micro frontend
+widget.</p> <h2 id="add-attribute"><a href="#add-attribute" class="header-anchor">#</a> Add Attribute</h2> <p>Edit <code>WidgetElement</code> to add attribute handling to the custom element,
+and make re-render our app when an attribute changes. Now, the <em>name</em>
+attribute is being read from the custom element and passed as a prop to
+the react root component (<em>App</em>).</p> <div class="language- extra-class"><pre><code>import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+
+const ATTRIBUTES = {
+  name: 'name',
+};
+
+class WidgetElement extends HTMLElement {
+
+  static get observedAttributes() {
+    return Object.values(ATTRIBUTES);
+  }
+
+  attributeChangedCallback(name, oldValue, newValue) {
+    if (!Object.values(ATTRIBUTES).includes(name)) {
+      throw new Error(`Untracked changed attribute: ${name}`);
+    }
+    if (this.mountPoint &amp;&amp; newValue !== oldValue) {
+      this.render();
+    }
+  }
+
+  connectedCallback() {
+    this.mountPoint = document.createElement('div');
+    this.appendChild(this.mountPoint);
+    this.render();
+  }
+
+  render() {
+    const name = this.getAttribute(ATTRIBUTES.name);
+    ReactDOM.render(&lt;App name={name} /&gt;, this.mountPoint);
+  }
+}
+
+customElements.define('my-widget', WidgetElement);
+
+export default WidgetElement;
+</code></pre></div><blockquote><p><strong>Note</strong></p> <p><code>attributeChangedCallback</code> is also a custom elements lifecycle hook
+method.</p></blockquote> <h2 id="display-input"><a href="#display-input" class="header-anchor">#</a> Display Input</h2> <p>Edit the <code>App</code> component now, to make it display the <code>name</code> prop.</p> <div class="language- extra-class"><pre><code>import React from 'react';
+import './App.css';
+
+function App({name}) {
+  return (
+    &lt;div className=&quot;App&quot;&gt;
+      &lt;header className=&quot;App-header&quot;&gt;
+        &lt;p&gt;
+          Hello, {name}!
+        &lt;/p&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+  );
+}
+
+export default App;
+</code></pre></div><p>Now, to ensure our custom element is working we can edit
+<code>public/index.html</code> and set a value for the <em>name</em> attribute of the
+custom element.</p> <div class="language- extra-class"><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot; /&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;%PUBLIC_URL%/favicon.ico&quot; /&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; /&gt;
+    &lt;title&gt;React App&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;my-widget name=&quot;Marco&quot;/&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div><p>After page reload, you should be able to display a simple &quot;Hello,
+Marco!&quot; message.</p> <h2 id="build-it"><a href="#build-it" class="header-anchor">#</a> Build It</h2> <p>From the react project root, type:</p> <p><code>npm run build</code></p> <p>and the <code>build/static</code> directory will be (re)generated. Copy it again
+into the Entando 6 instance under
+<code>src\main\webapp\resources\static\my-widget</code>, then rename</p> <ul><li><p>a file like <code>js/runtime~main.c7dcdf0b.js</code> to <code>js/runtime.js</code>
+(bootstrapping logic)</p></li> <li><p>a file like <code>js/2.230b21ef.chunk.js</code> to <code>js/vendor.js</code> (third-party
+libraries)</p></li> <li><p>a file like <code>js/main.1fd3965a.chunk.js</code> to <code>js/main.js</code> (app)</p></li> <li><p>a file like <code>css/main.d1b05096.chunk.js</code> to <code>css/main.css</code>
+(stylesheet)</p></li></ul> <blockquote><p><strong>Note</strong></p> <p>you could keep the original names in order to avoid potential caching
+issues, but then you will have to update the <em>Custom UI</em> field in the
+App Builder widget screen every time a new version of the widget is
+deployed.</p></blockquote> <p>If the application server you’re running does not have hot deploy
+enabled, restart it.</p> <h2 id="update-widget-in-app-builder"><a href="#update-widget-in-app-builder" class="header-anchor">#</a> Update Widget in App Builder</h2> <p>Open the Entando App Builder, go to UX Patterns → Widgets, find the
+widget <em>My Widget</em> and click to edit it.</p> <p>You’ll see a screen like this one</p> <p><img src="/assets/img/edit-widget-screen-2.798d0990.png" alt="Edit widget screen"></p> <p>Update the <em>Custom UI</em> field from:</p> <div class="language- extra-class"><pre><code>&lt;#assign wp=JspTaglibs[ &quot;/aps-core&quot;]&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lt;@wp.resourceURL /&gt;static/my-widget/static/css/main.css&quot;&gt;
+&lt;script async src=&quot;&lt;@wp.resourceURL /&gt;static/my-widget/static/js/runtime.js&quot;&gt;&lt;/script&gt;
+&lt;script async src=&quot;&lt;@wp.resourceURL /&gt;static/my-widget/static/js/vendor.js&quot;&gt;&lt;/script&gt;
+&lt;script async src=&quot;&lt;@wp.resourceURL /&gt;static/my-widget/static/js/main.js&quot;&gt;&lt;/script&gt;
+&lt;my-widget /&gt;
+</code></pre></div><p>to</p> <div class="language- extra-class"><pre><code>&lt;#assign wp=JspTaglibs[ &quot;/aps-core&quot;]&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&lt;@wp.resourceURL /&gt;static/my-widget/static/css/main.css&quot;&gt;
+&lt;script async src=&quot;&lt;@wp.resourceURL /&gt;static/my-widget/static/js/runtime.js&quot;&gt;&lt;/script&gt;
+&lt;script async src=&quot;&lt;@wp.resourceURL /&gt;static/my-widget/static/js/vendor.js&quot;&gt;&lt;/script&gt;
+&lt;script async src=&quot;&lt;@wp.resourceURL /&gt;static/my-widget/static/js/main.js&quot;&gt;&lt;/script&gt;
+&lt;@wp.currentWidget param=&quot;config&quot; configParam=&quot;name&quot; var=&quot;configName&quot; /&gt;
+&lt;my-widget name=&quot;${configName}&quot; /&gt;
+</code></pre></div><p>We basically added a JSTL tag to extract a field (under <code>configParam</code>)
+from the config field of the current widget and put it in a <code>configName</code>
+variable, that we pass to the custom element.</p> <p>Save the widget and reload the page that contains the widget: you’ll see
+&quot;Hello, Marco!&quot; as expected.</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/entando/entando-docs/edit/master/vuepress/docs/v6.1/tutorials/micro-frontends/widget-configuration/README.md" target="_blank" rel="noopener noreferrer">Edit this page on GitHub</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/26/2020, 10:59:44 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/v6.1/tutorials/micro-frontends/communication.html" class="prev">
+        Communication
+      </a></span> <span class="next"><a href="/v6.1/tutorials/micro-frontends/generate-micro-frontends-from-a-database-entity/">
+        Blueprint
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.2e9d114f.js" defer></script><script src="/assets/js/2.b89c1d7d.js" defer></script><script src="/assets/js/36.8fb4b5e2.js" defer></script>
+  </body>
+</html>
